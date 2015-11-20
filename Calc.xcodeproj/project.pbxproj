@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D44BDFD31BF9FED2000CCFA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44BDFD21BF9FED2000CCFA9 /* AppDelegate.swift */; };
+		D44BDFD51BF9FED2000CCFA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44BDFD41BF9FED2000CCFA9 /* ViewController.swift */; };
+		D44BDFD81BF9FED2000CCFA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D44BDFD61BF9FED2000CCFA9 /* Main.storyboard */; };
+		D44BDFDA1BF9FED2000CCFA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D44BDFD91BF9FED2000CCFA9 /* Assets.xcassets */; };
+		D44BDFDD1BF9FED2000CCFA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D44BDFDB1BF9FED2000CCFA9 /* LaunchScreen.storyboard */; };
+		D44BDFE81BF9FED2000CCFA9 /* CalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44BDFE71BF9FED2000CCFA9 /* CalcTests.swift */; };
+		D44BDFF31BF9FED2000CCFA9 /* CalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44BDFF21BF9FED2000CCFA9 /* CalcUITests.swift */; };
+		D44BDFF81BF9FED2000CCFA9 /* Calc WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D44BDFF71BF9FED2000CCFA9 /* Calc WatchKit App.app */; };
+		D44BDFFE1BF9FED2000CCFA9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D44BDFFC1BF9FED2000CCFA9 /* Interface.storyboard */; };
+		D44BE0001BF9FED2000CCFA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D44BDFFF1BF9FED2000CCFA9 /* Assets.xcassets */; };
+		D44BE0071BF9FED2000CCFA9 /* Calc WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D44BE0061BF9FED2000CCFA9 /* Calc WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D44BE00C1BF9FED2000CCFA9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44BE00B1BF9FED2000CCFA9 /* InterfaceController.swift */; };
+		D44BE00E1BF9FED2000CCFA9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44BE00D1BF9FED2000CCFA9 /* ExtensionDelegate.swift */; };
+		D44BE0101BF9FED2000CCFA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D44BE00F1BF9FED2000CCFA9 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D44BDFE41BF9FED2000CCFA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D44BDFC71BF9FED2000CCFA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D44BDFCE1BF9FED2000CCFA9;
+			remoteInfo = Calc;
+		};
+		D44BDFEF1BF9FED2000CCFA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D44BDFC71BF9FED2000CCFA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D44BDFCE1BF9FED2000CCFA9;
+			remoteInfo = Calc;
+		};
+		D44BDFF91BF9FED2000CCFA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D44BDFC71BF9FED2000CCFA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D44BDFF61BF9FED2000CCFA9;
+			remoteInfo = "Calc WatchKit App";
+		};
+		D44BE0081BF9FED2000CCFA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D44BDFC71BF9FED2000CCFA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D44BE0051BF9FED2000CCFA9;
+			remoteInfo = "Calc WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D44BE0171BF9FED2000CCFA9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D44BE0071BF9FED2000CCFA9 /* Calc WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44BE01B1BF9FED2000CCFA9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D44BDFF81BF9FED2000CCFA9 /* Calc WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D44BDFCF1BF9FED2000CCFA9 /* Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D44BDFD21BF9FED2000CCFA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D44BDFD41BF9FED2000CCFA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D44BDFD71BF9FED2000CCFA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D44BDFD91BF9FED2000CCFA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D44BDFDC1BF9FED2000CCFA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D44BDFDE1BF9FED2000CCFA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D44BDFE31BF9FED2000CCFA9 /* CalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D44BDFE71BF9FED2000CCFA9 /* CalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcTests.swift; sourceTree = "<group>"; };
+		D44BDFE91BF9FED2000CCFA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D44BDFEE1BF9FED2000CCFA9 /* CalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D44BDFF21BF9FED2000CCFA9 /* CalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcUITests.swift; sourceTree = "<group>"; };
+		D44BDFF41BF9FED2000CCFA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D44BDFF71BF9FED2000CCFA9 /* Calc WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calc WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D44BDFFD1BF9FED2000CCFA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D44BDFFF1BF9FED2000CCFA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D44BE0011BF9FED2000CCFA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D44BE0061BF9FED2000CCFA9 /* Calc WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Calc WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D44BE00B1BF9FED2000CCFA9 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InterfaceController.swift; path = "../Calc WatchKit Extension/InterfaceController.swift"; sourceTree = "<group>"; };
+		D44BE00D1BF9FED2000CCFA9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D44BE00F1BF9FED2000CCFA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D44BE0111BF9FED2000CCFA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D44BDFCC1BF9FED2000CCFA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44BDFE01BF9FED2000CCFA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44BDFEB1BF9FED2000CCFA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44BE0031BF9FED2000CCFA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D44BDFC61BF9FED2000CCFA9 = {
+			isa = PBXGroup;
+			children = (
+				D44BDFD11BF9FED2000CCFA9 /* Calc */,
+				D44BDFE61BF9FED2000CCFA9 /* CalcTests */,
+				D44BDFF11BF9FED2000CCFA9 /* CalcUITests */,
+				D44BDFFB1BF9FED2000CCFA9 /* Calc WatchKit App */,
+				D44BE00A1BF9FED2000CCFA9 /* Calc WatchKit Extension */,
+				D44BDFD01BF9FED2000CCFA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D44BDFD01BF9FED2000CCFA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D44BDFCF1BF9FED2000CCFA9 /* Calc.app */,
+				D44BDFE31BF9FED2000CCFA9 /* CalcTests.xctest */,
+				D44BDFEE1BF9FED2000CCFA9 /* CalcUITests.xctest */,
+				D44BDFF71BF9FED2000CCFA9 /* Calc WatchKit App.app */,
+				D44BE0061BF9FED2000CCFA9 /* Calc WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D44BDFD11BF9FED2000CCFA9 /* Calc */ = {
+			isa = PBXGroup;
+			children = (
+				D44BDFD21BF9FED2000CCFA9 /* AppDelegate.swift */,
+				D44BDFD41BF9FED2000CCFA9 /* ViewController.swift */,
+				D44BDFD61BF9FED2000CCFA9 /* Main.storyboard */,
+				D44BDFD91BF9FED2000CCFA9 /* Assets.xcassets */,
+				D44BDFDB1BF9FED2000CCFA9 /* LaunchScreen.storyboard */,
+				D44BDFDE1BF9FED2000CCFA9 /* Info.plist */,
+			);
+			path = Calc;
+			sourceTree = "<group>";
+		};
+		D44BDFE61BF9FED2000CCFA9 /* CalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				D44BDFE71BF9FED2000CCFA9 /* CalcTests.swift */,
+				D44BDFE91BF9FED2000CCFA9 /* Info.plist */,
+			);
+			path = CalcTests;
+			sourceTree = "<group>";
+		};
+		D44BDFF11BF9FED2000CCFA9 /* CalcUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D44BDFF21BF9FED2000CCFA9 /* CalcUITests.swift */,
+				D44BDFF41BF9FED2000CCFA9 /* Info.plist */,
+			);
+			path = CalcUITests;
+			sourceTree = "<group>";
+		};
+		D44BDFFB1BF9FED2000CCFA9 /* Calc WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D44BDFFC1BF9FED2000CCFA9 /* Interface.storyboard */,
+				D44BDFFF1BF9FED2000CCFA9 /* Assets.xcassets */,
+				D44BE0011BF9FED2000CCFA9 /* Info.plist */,
+				D44BE00B1BF9FED2000CCFA9 /* InterfaceController.swift */,
+			);
+			path = "Calc WatchKit App";
+			sourceTree = "<group>";
+		};
+		D44BE00A1BF9FED2000CCFA9 /* Calc WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D44BE00D1BF9FED2000CCFA9 /* ExtensionDelegate.swift */,
+				D44BE00F1BF9FED2000CCFA9 /* Assets.xcassets */,
+				D44BE0111BF9FED2000CCFA9 /* Info.plist */,
+			);
+			path = "Calc WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D44BDFCE1BF9FED2000CCFA9 /* Calc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D44BE01C1BF9FED2000CCFA9 /* Build configuration list for PBXNativeTarget "Calc" */;
+			buildPhases = (
+				D44BDFCB1BF9FED2000CCFA9 /* Sources */,
+				D44BDFCC1BF9FED2000CCFA9 /* Frameworks */,
+				D44BDFCD1BF9FED2000CCFA9 /* Resources */,
+				D44BE01B1BF9FED2000CCFA9 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D44BDFFA1BF9FED2000CCFA9 /* PBXTargetDependency */,
+			);
+			name = Calc;
+			productName = Calc;
+			productReference = D44BDFCF1BF9FED2000CCFA9 /* Calc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D44BDFE21BF9FED2000CCFA9 /* CalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D44BE01F1BF9FED2000CCFA9 /* Build configuration list for PBXNativeTarget "CalcTests" */;
+			buildPhases = (
+				D44BDFDF1BF9FED2000CCFA9 /* Sources */,
+				D44BDFE01BF9FED2000CCFA9 /* Frameworks */,
+				D44BDFE11BF9FED2000CCFA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D44BDFE51BF9FED2000CCFA9 /* PBXTargetDependency */,
+			);
+			name = CalcTests;
+			productName = CalcTests;
+			productReference = D44BDFE31BF9FED2000CCFA9 /* CalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D44BDFED1BF9FED2000CCFA9 /* CalcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D44BE0221BF9FED2000CCFA9 /* Build configuration list for PBXNativeTarget "CalcUITests" */;
+			buildPhases = (
+				D44BDFEA1BF9FED2000CCFA9 /* Sources */,
+				D44BDFEB1BF9FED2000CCFA9 /* Frameworks */,
+				D44BDFEC1BF9FED2000CCFA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D44BDFF01BF9FED2000CCFA9 /* PBXTargetDependency */,
+			);
+			name = CalcUITests;
+			productName = CalcUITests;
+			productReference = D44BDFEE1BF9FED2000CCFA9 /* CalcUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D44BDFF61BF9FED2000CCFA9 /* Calc WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D44BE0181BF9FED2000CCFA9 /* Build configuration list for PBXNativeTarget "Calc WatchKit App" */;
+			buildPhases = (
+				D44BDFF51BF9FED2000CCFA9 /* Resources */,
+				D44BE0171BF9FED2000CCFA9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D44BE0091BF9FED2000CCFA9 /* PBXTargetDependency */,
+			);
+			name = "Calc WatchKit App";
+			productName = "Calc WatchKit App";
+			productReference = D44BDFF71BF9FED2000CCFA9 /* Calc WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D44BE0051BF9FED2000CCFA9 /* Calc WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D44BE0141BF9FED2000CCFA9 /* Build configuration list for PBXNativeTarget "Calc WatchKit Extension" */;
+			buildPhases = (
+				D44BE0021BF9FED2000CCFA9 /* Sources */,
+				D44BE0031BF9FED2000CCFA9 /* Frameworks */,
+				D44BE0041BF9FED2000CCFA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Calc WatchKit Extension";
+			productName = "Calc WatchKit Extension";
+			productReference = D44BE0061BF9FED2000CCFA9 /* Calc WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D44BDFC71BF9FED2000CCFA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Kormos Adam";
+				TargetAttributes = {
+					D44BDFCE1BF9FED2000CCFA9 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = N2D355KYYC;
+					};
+					D44BDFE21BF9FED2000CCFA9 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = D44BDFCE1BF9FED2000CCFA9;
+					};
+					D44BDFED1BF9FED2000CCFA9 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = D44BDFCE1BF9FED2000CCFA9;
+					};
+					D44BDFF61BF9FED2000CCFA9 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = N2D355KYYC;
+					};
+					D44BE0051BF9FED2000CCFA9 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = N2D355KYYC;
+					};
+				};
+			};
+			buildConfigurationList = D44BDFCA1BF9FED2000CCFA9 /* Build configuration list for PBXProject "Calc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D44BDFC61BF9FED2000CCFA9;
+			productRefGroup = D44BDFD01BF9FED2000CCFA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D44BDFCE1BF9FED2000CCFA9 /* Calc */,
+				D44BDFE21BF9FED2000CCFA9 /* CalcTests */,
+				D44BDFED1BF9FED2000CCFA9 /* CalcUITests */,
+				D44BDFF61BF9FED2000CCFA9 /* Calc WatchKit App */,
+				D44BE0051BF9FED2000CCFA9 /* Calc WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D44BDFCD1BF9FED2000CCFA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44BDFDD1BF9FED2000CCFA9 /* LaunchScreen.storyboard in Resources */,
+				D44BDFDA1BF9FED2000CCFA9 /* Assets.xcassets in Resources */,
+				D44BDFD81BF9FED2000CCFA9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44BDFE11BF9FED2000CCFA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44BDFEC1BF9FED2000CCFA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44BDFF51BF9FED2000CCFA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44BE0001BF9FED2000CCFA9 /* Assets.xcassets in Resources */,
+				D44BDFFE1BF9FED2000CCFA9 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44BE0041BF9FED2000CCFA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44BE0101BF9FED2000CCFA9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D44BDFCB1BF9FED2000CCFA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44BDFD51BF9FED2000CCFA9 /* ViewController.swift in Sources */,
+				D44BDFD31BF9FED2000CCFA9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44BDFDF1BF9FED2000CCFA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44BDFE81BF9FED2000CCFA9 /* CalcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44BDFEA1BF9FED2000CCFA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44BDFF31BF9FED2000CCFA9 /* CalcUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44BE0021BF9FED2000CCFA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44BE00E1BF9FED2000CCFA9 /* ExtensionDelegate.swift in Sources */,
+				D44BE00C1BF9FED2000CCFA9 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D44BDFE51BF9FED2000CCFA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D44BDFCE1BF9FED2000CCFA9 /* Calc */;
+			targetProxy = D44BDFE41BF9FED2000CCFA9 /* PBXContainerItemProxy */;
+		};
+		D44BDFF01BF9FED2000CCFA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D44BDFCE1BF9FED2000CCFA9 /* Calc */;
+			targetProxy = D44BDFEF1BF9FED2000CCFA9 /* PBXContainerItemProxy */;
+		};
+		D44BDFFA1BF9FED2000CCFA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D44BDFF61BF9FED2000CCFA9 /* Calc WatchKit App */;
+			targetProxy = D44BDFF91BF9FED2000CCFA9 /* PBXContainerItemProxy */;
+		};
+		D44BE0091BF9FED2000CCFA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D44BE0051BF9FED2000CCFA9 /* Calc WatchKit Extension */;
+			targetProxy = D44BE0081BF9FED2000CCFA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D44BDFD61BF9FED2000CCFA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D44BDFD71BF9FED2000CCFA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D44BDFDB1BF9FED2000CCFA9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D44BDFDC1BF9FED2000CCFA9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D44BDFFC1BF9FED2000CCFA9 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D44BDFFD1BF9FED2000CCFA9 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D44BE0121BF9FED2000CCFA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D44BE0131BF9FED2000CCFA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D44BE0151BF9FED2000CCFA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Calc WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ekfpti.Calc.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		D44BE0161BF9FED2000CCFA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Calc WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ekfpti.Calc.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		D44BE0191BF9FED2000CCFA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Calc_WatchKit_Extension;
+				INFOPLIST_FILE = "Calc WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ekfpti.Calc.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		D44BE01A1BF9FED2000CCFA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Calc_WatchKit_Extension;
+				INFOPLIST_FILE = "Calc WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ekfpti.Calc.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		D44BE01D1BF9FED2000CCFA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Calc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ekfpti.Calc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		D44BE01E1BF9FED2000CCFA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Calc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ekfpti.Calc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		D44BE0201BF9FED2000CCFA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ekfpti.CalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calc.app/Calc";
+			};
+			name = Debug;
+		};
+		D44BE0211BF9FED2000CCFA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ekfpti.CalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calc.app/Calc";
+			};
+			name = Release;
+		};
+		D44BE0231BF9FED2000CCFA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CalcUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ekfpti.CalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Calc;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D44BE0241BF9FED2000CCFA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CalcUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ekfpti.CalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Calc;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D44BDFCA1BF9FED2000CCFA9 /* Build configuration list for PBXProject "Calc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D44BE0121BF9FED2000CCFA9 /* Debug */,
+				D44BE0131BF9FED2000CCFA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D44BE0141BF9FED2000CCFA9 /* Build configuration list for PBXNativeTarget "Calc WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D44BE0151BF9FED2000CCFA9 /* Debug */,
+				D44BE0161BF9FED2000CCFA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D44BE0181BF9FED2000CCFA9 /* Build configuration list for PBXNativeTarget "Calc WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D44BE0191BF9FED2000CCFA9 /* Debug */,
+				D44BE01A1BF9FED2000CCFA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D44BE01C1BF9FED2000CCFA9 /* Build configuration list for PBXNativeTarget "Calc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D44BE01D1BF9FED2000CCFA9 /* Debug */,
+				D44BE01E1BF9FED2000CCFA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D44BE01F1BF9FED2000CCFA9 /* Build configuration list for PBXNativeTarget "CalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D44BE0201BF9FED2000CCFA9 /* Debug */,
+				D44BE0211BF9FED2000CCFA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D44BE0221BF9FED2000CCFA9 /* Build configuration list for PBXNativeTarget "CalcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D44BE0231BF9FED2000CCFA9 /* Debug */,
+				D44BE0241BF9FED2000CCFA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D44BDFC71BF9FED2000CCFA9 /* Project object */;
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "InterfaceController.tappedNumber(Double) -&gt; ():InterfaceController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "num">
+            </PersistentString>
+            <PersistentString
+               value = "savedNum">
+            </PersistentString>
+            <PersistentString
+               value = "lastButtonWasMode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "InterfaceController.tapped0() -&gt; ():InterfaceController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "InterfaceController.tappedMinus() -&gt; ():InterfaceController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "changeMode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "InterfaceController.updateText() -&gt; ():InterfaceController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "labelString">
+            </PersistentString>
+            <PersistentString
+               value = "savedNum">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "InterfaceController.tappedEquals() -&gt; ():InterfaceController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "labelString">
+            </PersistentString>
+            <PersistentString
+               value = "savedNum">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
