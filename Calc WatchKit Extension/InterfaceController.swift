@@ -26,6 +26,8 @@ class InterfaceController: WKInterfaceController {
     var savedNum:Double = 0
     var lastButtonWasMode = false
     var isThereDot = false
+    var creditCounter = 0
+    var creditCounterString = "0"
     
     @IBOutlet var label: WKInterfaceLabel!
     @IBAction func tapped0() {tappedNumber(0)}
@@ -52,7 +54,7 @@ class InterfaceController: WKInterfaceController {
     
     func updateText(){
         guard let labelInt:Double = Double(labelString) else {
-            label.setText("Kormos Adam")
+            label.setText("Kormos Adam ")
             return
         }
         savedNum = (currentMode == modes.NOT_SET) ? labelInt : savedNum
@@ -70,6 +72,7 @@ class InterfaceController: WKInterfaceController {
         
         
     }
+
     
     @IBAction func tappedDot(){
         
@@ -102,6 +105,8 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func tappedEquals() {
         WKInterfaceDevice.currentDevice().playHaptic(.Success)
+        
+        creditCounter = 0
         
         guard let num:Double = Double(labelString) else {
         return
@@ -161,6 +166,9 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func tappedClear() {
         
+        
+        creditCounter += 1
+        
         savedNum = 0
         labelString = "0"
         label.setText("0")
@@ -168,6 +176,15 @@ class InterfaceController: WKInterfaceController {
         lastButtonWasMode = false
         isThereDot = false
         WKInterfaceDevice.currentDevice().playHaptic(.Retry)
+        
+        creditCounterString = "\(creditCounter)"
+        
+        if (creditCounter == 7)
+        {
+            creditCounter = 0
+            label.setText("Kormos Adam")
+        }
+
         
     }
     

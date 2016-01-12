@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "mach_msg_trap:(null)">
+         <PersistentStrings>
+            <PersistentString
+               value = "creditCounter">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "InterfaceController.tappedNumber(Double) -&gt; ():InterfaceController.swift">
          <PersistentStrings>
             <PersistentString
@@ -17,15 +25,15 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "InterfaceController.tapped0() -&gt; ():InterfaceController.swift">
-      </ContextState>
-      <ContextState
          contextName = "InterfaceController.tappedMinus() -&gt; ():InterfaceController.swift">
          <PersistentStrings>
             <PersistentString
                value = "changeMode">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "InterfaceController.tapped0() -&gt; ():InterfaceController.swift">
       </ContextState>
       <ContextState
          contextName = "InterfaceController.updateText() -&gt; ():InterfaceController.swift">
