@@ -54,7 +54,7 @@ class InterfaceController: WKInterfaceController {
     
     func updateText(){
         guard let labelInt:Double = Double(labelString) else {
-            label.setText("Kormos Adam ")
+            label.setText("konvert_hiba")
             return
         }
         savedNum = (currentMode == modes.NOT_SET) ? labelInt : savedNum
