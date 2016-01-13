@@ -156,7 +156,9 @@
             <objects>
                 <controller identifier="logscreen" id="YWu-4r-FT0" customClass="LogInterfaceController" customModule="Calc_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="Ez itt ennek a szovege" id="Txt-hE-dsv"/>
+                        <label width="136" alignment="center" text="Ez itt ennek a szovege" textAlignment="left" numberOfLines="0" id="Txt-hE-dsv">
+                            <fontDescription key="font" type="system" pointSize="7"/>
+                        </label>
                     </items>
                     <connections>
                         <outlet property="LogLabel" destination="Txt-hE-dsv" id="mA6-vd-pmR"/>

@@ -29,6 +29,11 @@ class InterfaceController: WKInterfaceController {
     var creditCounter = 0
     var creditCounterString = "0"
     
+    var tomb = [String]()
+    
+    var tombelem = 0
+    
+    
     @IBOutlet var label: WKInterfaceLabel!
     @IBAction func tapped0() {tappedNumber(0)}
     @IBAction func tapped1() {tappedNumber(1)}
@@ -72,6 +77,24 @@ class InterfaceController: WKInterfaceController {
         
         
     }
+    
+    func tombbeir(szoveg:String){
+        tomb.append(datum() + " " + szoveg + " " + "\n")
+        tombelem += 1
+    }
+    
+    func datum() ->String{
+        
+        let currentDate = NSDate()
+        
+        let dateFormatter = NSDateFormatter()
+        
+        dateFormatter.dateFormat = "yyy.MM.dd HH:mm:ss:SS"
+        
+        let convertedDate = dateFormatter.stringFromDate(currentDate)
+        
+        return convertedDate
+    }
 
     
     @IBAction func tappedDot(){
@@ -96,6 +119,8 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func tappedPlus() {
+        
+        tombbeir("Pressed +")
         changeMode(modes.ADDITION)
     }
     
@@ -201,12 +226,6 @@ class InterfaceController: WKInterfaceController {
     @IBAction func LogButton() {
         
         WKInterfaceDevice.currentDevice().playHaptic(.Retry)
-        
-        
-        var tomb = [String]()
-        
-        tomb.append("elso ")
-        tomb.append("masodik ")
         
         
         presentControllerWithName("logscreen", context: tomb)

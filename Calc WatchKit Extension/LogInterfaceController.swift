@@ -19,9 +19,15 @@ class LogInterfaceController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
-        let str = context as! [String]
-        let proba = str[0] + str[1]
-        LogLabel.setText(proba)
+        let tomb = context as! [String]
+        
+        var logstring = ""
+        
+        for item in tomb{
+        logstring += item
+        }
+        
+        LogLabel.setText(logstring)
         
         // Configure interface objects here.
     }
