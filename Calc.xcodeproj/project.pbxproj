@@ -21,6 +21,7 @@
 		D44BE00C1BF9FED2000CCFA9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44BE00B1BF9FED2000CCFA9 /* InterfaceController.swift */; };
 		D44BE00E1BF9FED2000CCFA9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44BE00D1BF9FED2000CCFA9 /* ExtensionDelegate.swift */; };
 		D44BE0101BF9FED2000CCFA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D44BE00F1BF9FED2000CCFA9 /* Assets.xcassets */; };
+		D4C5375A1C46E87100514683 /* LogInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C537591C46E87100514683 /* LogInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,10 +99,11 @@
 		D44BDFFF1BF9FED2000CCFA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D44BE0011BF9FED2000CCFA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D44BE0061BF9FED2000CCFA9 /* Calc WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Calc WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D44BE00B1BF9FED2000CCFA9 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InterfaceController.swift; path = "../Calc WatchKit Extension/InterfaceController.swift"; sourceTree = "<group>"; };
+		D44BE00B1BF9FED2000CCFA9 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		D44BE00D1BF9FED2000CCFA9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		D44BE00F1BF9FED2000CCFA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D44BE0111BF9FED2000CCFA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4C537591C46E87100514683 /* LogInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,7 +199,6 @@
 				D44BDFFC1BF9FED2000CCFA9 /* Interface.storyboard */,
 				D44BDFFF1BF9FED2000CCFA9 /* Assets.xcassets */,
 				D44BE0011BF9FED2000CCFA9 /* Info.plist */,
-				D44BE00B1BF9FED2000CCFA9 /* InterfaceController.swift */,
 			);
 			path = "Calc WatchKit App";
 			sourceTree = "<group>";
@@ -205,6 +206,8 @@
 		D44BE00A1BF9FED2000CCFA9 /* Calc WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				D44BE00B1BF9FED2000CCFA9 /* InterfaceController.swift */,
+				D4C537591C46E87100514683 /* LogInterfaceController.swift */,
 				D44BE00D1BF9FED2000CCFA9 /* ExtensionDelegate.swift */,
 				D44BE00F1BF9FED2000CCFA9 /* Assets.xcassets */,
 				D44BE0111BF9FED2000CCFA9 /* Info.plist */,
@@ -432,6 +435,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4C5375A1C46E87100514683 /* LogInterfaceController.swift in Sources */,
 				D44BE00E1BF9FED2000CCFA9 /* ExtensionDelegate.swift in Sources */,
 				D44BE00C1BF9FED2000CCFA9 /* InterfaceController.swift in Sources */,
 			);

@@ -197,6 +197,26 @@ class InterfaceController: WKInterfaceController {
     }
     
     
+    
+    @IBAction func LogButton() {
+        
+        WKInterfaceDevice.currentDevice().playHaptic(.Retry)
+        
+        
+        var tomb = [String]()
+        
+        tomb.append("elso ")
+        tomb.append("masodik ")
+        
+        
+        presentControllerWithName("logscreen", context: tomb)
+    }
+    
+    
+    
+    
+    
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
