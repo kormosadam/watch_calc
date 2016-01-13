@@ -47,6 +47,8 @@ class InterfaceController: WKInterfaceController {
     @IBAction func tapped9() {tappedNumber(9)}
     
     func tappedNumber(num:Double){
+        tombbeir("Pressed " + "\(Int32(num))")
+        
         if lastButtonWasMode {
             lastButtonWasMode = false
             labelString = "0"
@@ -98,6 +100,7 @@ class InterfaceController: WKInterfaceController {
 
     
     @IBAction func tappedDot(){
+        tombbeir("Pressed dot(.)")
         
         if ((Double(labelString)! % 1) != 0){ isThereDot = true}
         
@@ -125,10 +128,12 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func tappedMinus() {
+        tombbeir("Pressed -")
         changeMode(modes.SUBTRACTION)
     }
     
     @IBAction func tappedEquals() {
+        tombbeir("Pressed =")
         WKInterfaceDevice.currentDevice().playHaptic(.Success)
         
         creditCounter = 0
@@ -151,8 +156,9 @@ class InterfaceController: WKInterfaceController {
         else if currentMode == modes.DIVISION {
             let temp =  num
             if temp == 0.0 {
-                tappedClear()
+                clear()
                 label.setText("Err")
+                tombbeir("Div0 Err")
                 return
             }
             
@@ -190,7 +196,13 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func tappedClear() {
-        
+        tombbeir("Pressed AC")
+        clear()
+    }
+    
+    
+    
+    func clear(){
         
         creditCounter += 1
         
@@ -214,10 +226,12 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func tappedMultiple() {
+        tombbeir("Pressed *")
         changeMode(modes.MULTIPLICATION)
     }
     
     @IBAction func tappedDivide() {
+        tombbeir("Pressed /")
         changeMode(modes.DIVISION)
     }
     
