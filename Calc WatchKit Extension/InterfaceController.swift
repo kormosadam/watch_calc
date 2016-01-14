@@ -31,7 +31,7 @@ class InterfaceController: WKInterfaceController {
     
     var tomb = [String]()
     
-    var tombelem = 0
+    var tombelem = -1
     
     
     @IBOutlet var label: WKInterfaceLabel!
@@ -47,7 +47,7 @@ class InterfaceController: WKInterfaceController {
     @IBAction func tapped9() {tappedNumber(9)}
     
     func tappedNumber(num:Double){
-        tombbeir("Pressed " + "\(Int32(num))")
+        tombbeir("Pressed " + "\(Int32(num))\n")
         
         if lastButtonWasMode {
             lastButtonWasMode = false
@@ -81,7 +81,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     func tombbeir(szoveg:String){
-        tomb.append(datum() + " " + szoveg + " " + "\n")
+        tomb.append(datum() + " " + szoveg)
         tombelem += 1
     }
     
@@ -100,7 +100,7 @@ class InterfaceController: WKInterfaceController {
 
     
     @IBAction func tappedDot(){
-        tombbeir("Pressed dot(.)")
+        tombbeir("Pressed dot(.)\n")
         
         if ((Double(labelString)! % 1) != 0){ isThereDot = true}
         
@@ -123,17 +123,17 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func tappedPlus() {
         
-        tombbeir("Pressed +")
+        tombbeir("Pressed +\n")
         changeMode(modes.ADDITION)
     }
     
     @IBAction func tappedMinus() {
-        tombbeir("Pressed -")
+        tombbeir("Pressed -\n")
         changeMode(modes.SUBTRACTION)
     }
     
     @IBAction func tappedEquals() {
-        tombbeir("Pressed =")
+        tombbeir("Pressed =\n")
         WKInterfaceDevice.currentDevice().playHaptic(.Success)
         
         creditCounter = 0
@@ -145,24 +145,32 @@ class InterfaceController: WKInterfaceController {
         return
         }
         if currentMode == modes.ADDITION {
+            tombbeir("\n" + "\(savedNum)" + "+" + "\(num)" + " =" + " ")
         savedNum += num
+            tomb[tombelem] += "\(savedNum)\n"
         }
         else if currentMode == modes.SUBTRACTION {
+            tombbeir("\n" + "\(savedNum)" + "-" + "\(num)" + " =" + " ")
         savedNum -= num
+            tomb[tombelem] += "\(savedNum)\n"
         }
         else if currentMode == modes.MULTIPLICATION {
+            tombbeir("\n" + "\(savedNum)" + "*" + "\(num)" + " =" + " ")
         savedNum *= num
+            tomb[tombelem] += "\(savedNum)\n"
         }
         else if currentMode == modes.DIVISION {
             let temp =  num
             if temp == 0.0 {
                 clear()
                 label.setText("Err")
-                tombbeir("Div0 Err")
+                tombbeir("Div0 Err\n")
                 return
             }
             
             let result : Double = savedNum / temp
+            tombbeir("\n" + "\(savedNum)" + "/" + "\(temp)" + " =" + " ")
+            tomb[tombelem] += "\(result)\n"
              currentMode = modes.NOT_SET
             labelString = "\(result)"
             
@@ -196,7 +204,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func tappedClear() {
-        tombbeir("Pressed AC")
+        tombbeir("Pressed AC\n")
         clear()
     }
     
@@ -220,18 +228,21 @@ class InterfaceController: WKInterfaceController {
         {
             creditCounter = 0
             label.setText("Kormos Adam")
+            tombelem = -1
+            tomb = [String]()
+            
         }
 
         
     }
     
     @IBAction func tappedMultiple() {
-        tombbeir("Pressed *")
+        tombbeir("Pressed *\n")
         changeMode(modes.MULTIPLICATION)
     }
     
     @IBAction func tappedDivide() {
-        tombbeir("Pressed /")
+        tombbeir("Pressed /\n")
         changeMode(modes.DIVISION)
     }
     
