@@ -149,7 +149,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="682" y="572"/>
+            <point key="canvasLocation" x="901" y="879"/>
         </scene>
         <!--logscreen-->
         <scene sceneID="s5B-ar-nqh">
@@ -157,7 +157,7 @@
                 <controller identifier="logscreen" id="YWu-4r-FT0" customClass="LogInterfaceController" customModule="Calc_WatchKit_Extension">
                     <items>
                         <label width="136" alignment="center" text="Ez itt ennek a szovege" textAlignment="left" numberOfLines="0" id="Txt-hE-dsv">
-                            <fontDescription key="font" type="system" pointSize="7"/>
+                            <fontDescription key="font" type="system" pointSize="8"/>
                         </label>
                     </items>
                     <connections>
@@ -165,7 +165,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="931" y="572"/>
+            <point key="canvasLocation" x="1117" y="879"/>
         </scene>
     </scenes>
 </document>
